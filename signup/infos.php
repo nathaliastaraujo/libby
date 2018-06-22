@@ -49,11 +49,7 @@ if ( isset( $_POST ) && ! empty( $_POST ) ) {
 		} else {
 			$pdo_insere = $conexao_pdo->prepare('INSERT INTO CONTA (contaEmail, contaSenha, contaNome, contaCPF, contaPlano) 
 			VALUES (?, ?, ?, ?, ?)');
-<<<<<<< HEAD
 			$pdo_insere->execute(  array("$contaEmail", "$contaSenha", "$contaNome", "$contaCPF", $_SESSION['contaPlano']));
-=======
-			$pdo_insere->execute(  array("$contaEmail", "$contaSenha", "$contaNome", "$contaCPF", 1  ));
->>>>>>> 548ef6ecb9c65e44f4c515f60ca9bccfa6b636b0
 			
  echo "<script type='text/javascript'>alert('Usuário cadastrado');</script>";
 header("Location:http://localhost/libby/signup/pagamento.html");
