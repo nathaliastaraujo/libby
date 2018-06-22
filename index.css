@@ -1,0 +1,27 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: url(bg.jpg);
+	background-size: cover;
+	font-family: Arial Narrow, sans-serif;
+}
+h1
+{
+	margin: 10;
+	padding: 50 50 60px;
+	color: #FFFFFF;
+	text-align: center;
+	text-shadow: 3px 2px black;
+	font-size: 100px;
+	font-weight: bold;
+}
+h2
+{
+	margin: 10;
+	padding: 50 50 60px;
+	color: #FFFFFF;
+	text-align: center;
+	text-shadow: 3px 2px black;
+	font-size: 40px;
+}

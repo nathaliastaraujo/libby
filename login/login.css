@@ -1,0 +1,79 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: url(bg2.jpg);
+	background-size: cover;
+	font-family: Arial Narrow, sans-serif;
+}
+.loginBox
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 600px;
+	height: 480px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: rgba(255, 255, 2555, 1);
+	box-shadow: 5px 5px 5px;
+}
+.logo
+{
+	width: 100px;
+	height: 50px;
+	border-radius: 0%;
+	overflow: hidden;
+	position: absolute;
+	top: calc(30px/2);
+	left: calc(13% - 50px);
+}
+h2
+{
+	margin: 0;
+	padding: 0 0 60px;
+	color: #414040;
+	text-align: left;
+}
+.loginBox p
+{
+	margin: 0;
+	padding: 0;
+	font-weight:;
+	color: #000000;
+}
+.loginBox input
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #000000;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #000000;
+	font-size: 16px;
+}
+::placeholder
+{
+	color: rgba(0, 0, 0,.5);
+}
+.loginBox a
+{
+	color: #48D1CC;
+	font-size: 14px;
+	font-weight: ;
+	text-decoration: none;
+}
+.loginBox a:hover
+{
+	color: #262626;
+	font-size: 14px;
+	font-weight: ;
+	text-decoration: underline;
+}
