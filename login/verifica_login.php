@@ -39,7 +39,7 @@ if (
 		$_SESSION['contaEmail']      = $fetch_usuario['contaEmail'];
 		$_SESSION['contaCod']      = $fetch_usuario['contaCod'];
 		$_SESSION['contaCPF']      = $fetch_usuario['contaCPF'];
-		$_SESSION['contaPlano']      = $fetch_usuario['contaPlano'];
+		//$_SESSION['contaPlano']      = $fetch_usuario['contaPlano'];
 
 		header("Location:http://localhost/libby/signup/infos.html");
 	} else {
