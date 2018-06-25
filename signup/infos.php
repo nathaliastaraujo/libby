@@ -10,6 +10,7 @@
 <?php
 
 include('../login/config.php');
+// include('../login/verifica_login.php');
 
 $erro = false;
 
@@ -50,6 +51,8 @@ if ( isset( $_POST ) && ! empty( $_POST ) ) {
 			$pdo_insere = $conexao_pdo->prepare('INSERT INTO CONTA (contaEmail, contaSenha, contaNome, contaCPF, contaPlano) 
 			VALUES (?, ?, ?, ?, ?)');
 			$pdo_insere->execute(  array("$contaEmail", "$contaSenha", "$contaNome", "$contaCPF", $_SESSION['contaPlano']));
+
+		include('../login/verifica_login.php');
 			
  echo "<script type='text/javascript'>alert('Usuário cadastrado');</script>";
 header("Location:http://localhost/libby/signup/pagamento.html");

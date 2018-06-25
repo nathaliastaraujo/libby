@@ -17,15 +17,19 @@
   <p><h6><center><b> PASSO 1: ESCOLHA SEU PLANO </b></center></h6></p>
   <h7><center> Qual plano melhor te atende?</center></h7>
   <p><div class="container">
+      <form id="escolhaPlano" name="escolhaPlano" method="POST" action="plano.php"></form>
     <div class="row">
       <div class="col align-self-center">
         <table class="table table-hover">
           <thead>
             <tr>
               <th scope="col"></th>
-              <th scope="col"><label class="btn btn-info btn-lg active"><input type="radio" name="options" id="option1" autocomplete="off" checked> BÁSICO</label></th>
-              <th scope="col"><label class="btn btn-info btn-lg active"><input type="radio" name="options" id="option2" autocomplete="off"> PADRÃO</label></th>
-              <th scope="col"><label class="btn btn-info btn-lg active"><input type="radio" name="options" id="option3" autocomplete="off"> PREMIUM</label></th>
+              <th scope="col"><label class="btn btn-info btn-lg active"><input type="radio" name="options" 
+                value="1" id="option1" autocomplete="off" checked> BÁSICO</label></th>
+              <th scope="col"><label class="btn btn-info btn-lg active"><input type="radio" name="options" 
+                value="2" id="option2" autocomplete="off"> PADRÃO</label></th>
+              <th scope="col"><label class="btn btn-info btn-lg active"><input type="radio" name="options" 
+                value="3" id="option3" autocomplete="off"> PREMIUM</label></th>
             </tr>
           </thead>
           <tbody>
@@ -65,7 +69,21 @@
     </div>
   </div>
 </p>
-<center><a class="btn btn-info btn-lg" href="http://localhost/libby/signup/infos.html" role="button">CONTINUAR</a></center>
+
+
+<center><input role="button" type="submit" a class="btn btn-info btn-lg" name="plano" id="plano" 
+  href="http://localhost/libby/signup/infos.html"  ></a></center>
+
+<!-- 
+  <center><a class="btn btn-info btn-lg" href="http://localhost/libby/signup/infos.html" role="button">CONTINUAR</a></center>
+
+<center><input a class="btn btn-info btn-lg" name="pagamento" id="pagamento" type="submit"></a></center>
+
+ <input a class="btn btn-info btn-lg" name="cadastrar" type="submit" id="cadastrar" 
+     role="button"></a>
+-->
+</form>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
