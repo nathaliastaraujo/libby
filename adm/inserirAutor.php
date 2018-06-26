@@ -29,7 +29,7 @@ if (!$banco)
 	CODE ERROR: ".mysqli_error($conexao));
 
 	$query = "INSERT INTO AUTOR (autCod, autNome, autBio) 
-	VALUES ('$autorCodigo, $autorNome, $autorBio)";
+	VALUES ($autorCodigo, $autorNome, $autorBio)";
 
   mysqli_query($conexao, $query);
 
