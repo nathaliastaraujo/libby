@@ -8,12 +8,10 @@
 <body>
 
 <?php
-
 include('../login/config.php');
 // include('../login/verifica_login.php');
 
 $erro = false;
-
 // Verifica se algo foi postado para publicar ou editar
 if ( isset( $_POST ) && ! empty( $_POST ) ) {
 	// Cria as variáveis
@@ -43,25 +41,21 @@ if ( isset( $_POST ) && ! empty( $_POST ) ) {
 	if ( ! $erro ) {
 		// Se o usuário existir mostra alert que já existe
 		if ( ! empty( $contaCod ) ) {
-
      echo "<script type='text/javascript'>alert('Usuário já existe');</script>";
-  //header("Location:http://localhost/libby/signup/infos.html");
-
+  header("Location:http://localhost/libby/signup/infos.html");
 		} else {
 			$pdo_insere = $conexao_pdo->prepare('INSERT INTO CONTA (contaEmail, contaSenha, contaNome, contaCPF, contaPlano) 
 			VALUES (?, ?, ?, ?, ?)');
-			$pdo_insere->execute(  array("$contaEmail", "$contaSenha", "$contaNome", "$contaCPF", $_SESSION['contaPlano']));
-
-		include('../login/verifica_login.php');
+			$pdo_insere->execute(  array("$contaEmail", "$contaSenha", "$contaNome", "$contaCPF", 0));
+			include('../login/login.php');
+		//include('../login/verifica_login.php');
 			
  echo "<script type='text/javascript'>alert('Usuário cadastrado');</script>";
-header("Location:http://localhost/libby/signup/pagamento.html");
-
+header("Location:http://localhost/libby/signup/plano.html");
 		}
 		
 	}
 }
-
 ?> 
 </body>
 </html>
