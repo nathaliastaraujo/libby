@@ -75,8 +75,10 @@
       </div> -->
 	  <div class="form-group row">
 	  <?php
-		include "conexao.php"; //mudar o nome das conexões, não sei qual é
-		include "executaSQL.php"; //mudar aqui também
+		//include "conexao.php"; //mudar o nome das conexões, não sei qual é
+    include('../login/config.php');
+    
+    //include "executaSQL.php"; //mudar aqui também
 
 		$link=conectar(); 
 
@@ -91,8 +93,10 @@
 	  
 	  <div class="form-group row">
 	  <?php
-		include "conexao.php"; //mudar o nome das conexões, não sei qual é
-		include "executaSQL.php"; //mudar aqui também
+
+include('../login/config.php');
+		//include "conexao.php"; //mudar o nome das conexões, não sei qual é
+		//include "executaSQL.php"; //mudar aqui também
 
 		$link=conectar(); 
 
@@ -107,8 +111,10 @@
 	  
 	  <div class="form-group row">
 	  <?php
-		include "conexao.php"; //mudar o nome das conexões, não sei qual é
-		include "executaSQL.php"; //mudar aqui também
+
+include('../login/config.php');
+		//include "conexao.php"; //mudar o nome das conexões, não sei qual é
+		//include "executaSQL.php"; //mudar aqui também
 
 		$link=conectar(); 
 
