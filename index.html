@@ -32,14 +32,15 @@
                     </div>
                     <div class="col-md-auto">
                     </div>
-                    <div class="col col-lg-2">
-                            <a type="button" class="btn btn-info btn-lg" href="http://localhost/libby/login/login.html"
-                            role="button">Entrar</a>       
-                    </div>
+                    
                     <div class="col col-lg-2">
                         <a type="button" class="btn btn-info btn-lg" href="http://localhost/libby/signup/infos.html"
                         role="button">Cadastrar</a>       
                 </div>
+                <div class="col col-lg-2">
+                    <a type="button" class="btn btn-info btn-lg" href="http://localhost/libby/login/login.html"
+                    role="button">Entrar</a>       
+            </div>
                 </div>
             </div>
         </nav>
@@ -55,6 +56,7 @@
                     <h2>ASSINE JÁ E EXPANDA SEU CONHECIMENTO.</h2>
                 </p>
                 <p>
+                        <form id="escolhaPlano" name="escolhaPlano" method="POST" action="index.php">
                     <div class="container">
                         <center>
                             <div class="card-deck">
@@ -70,8 +72,14 @@
                                         </ul>
 
                 </p>
-                <a role="button" class="btn btn-info" href="http://localhost/libby/signup/infos.html" >
+
+                <input a class="btn btn-info" name="options" type="submit" id="options" value="basico"
+                   role="button"> </a>
+<!--
+                <a role="button" class="btn btn-info" 
+                href="http://localhost/libby/signup/infos.html" >
                     ESCOLHER ESTA OPÇÃO</a>
+    -->
                 </div>
                 </div>
                 <div class="card">
@@ -86,8 +94,8 @@
                         </ul>
 
                         </p>
-                        <a role="button" class="btn btn-info" href="http://localhost/libby/signup/infos.html" >
-                            ESCOLHER ESTA OPÇÃO</a>
+                        <input a class="btn btn-info" name="options" type="submit" id="options" value="padrao"
+                   role="button"> </a>
                     </div>
                 </div>
                 <div class="card">
@@ -102,13 +110,15 @@
                         </ul>
 
                         </p>
-                        <a role="button" class="btn btn-info" href="http://localhost/libby/signup/infos.html" >
-                            ESCOLHER ESTA OPÇÃO</a>
+                        <input a class="btn btn-info" name="options" type="submit" id="options" value="premium"
+                        role="button"> </a>
                     </div>
                 </div>
                 </div>
                 </center>
                 </div>
+               
+
                 </p>
             </div>
 
