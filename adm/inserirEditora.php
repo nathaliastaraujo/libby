@@ -28,7 +28,7 @@ if (!$banco)
 	CODE ERROR: ".mysqli_error($conexao));
 
 	$query = "INSERT INTO EDITORA (editCod, editNome, editLocalizacao) 
-	VALUES ('$editoraCodigo, $editoraNome, $editoraLocal)";
+	VALUES ($editoraCodigo, $editoraNome, $editoraLocal)";
 
   mysqli_query($conexao, $query);
 

@@ -34,7 +34,7 @@ if (!$banco)
 	CODE ERROR: ".mysqli_error($conexao));
 
 	$query = "INSERT INTO LIVRO (livCod, livTitulo, livISBN, livANO, livNPag, livTags, autCod, editCod, GENERO_genCod) 
-	VALUES ('$livroCodigo, $livroTitulo, $livroISBN, $livroAno, $livroPaginas, $livroTags, $livroAutor, $livroEditora, $livroGenero)";
+	VALUES ($livroCodigo, $livroTitulo, $livroISBN, $livroAno, $livroPaginas, $livroTags, $livroAutor, $livroEditora, $livroGenero)";
 
   mysqli_query($conexao, $query);
 

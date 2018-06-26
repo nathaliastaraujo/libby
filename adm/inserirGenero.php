@@ -16,7 +16,7 @@ $generoNome = $_POST['generoNome'];
 
 include('../login/config.php');
 
-/*
+
 $conexao = mysqli_connect('localhost','root','root','libby');
 
 if (!$conexao)
@@ -30,13 +30,13 @@ if (!$banco)
 	CODE ERROR: ".mysqli_error($conexao));
 
 	$query = "INSERT INTO GENERO (genCod, genNome) 
-	VALUES ('$generoCodigo, $generoNome)";
+	VALUES ($generoCodigo, $generoNome)";
 
   mysqli_query($conexao, $query);
 
 	echo "Genero cadastrado!!";
 	header("Location:http://localhost/libby/login/login.html");
-
+/*
 $erro = false;
 
 // Verifica se algo foi postado para publicar ou editar
@@ -85,16 +85,16 @@ header("Location:http://localhost/libby/signup/pagamento.html");
 		}
 		
 	}
-
-*/
-
-
 		$pdo_insere = $conexao_pdo->prepare('INSERT INTO GENERO (genCod, genNome) 
 		VALUES (?, ?)');
 		$pdo_insere->execute(  array("$generoCodigo", "$generoNome"));
 
 
 		header("Location:http://localhost/libby/login/login.html");
+*/
+
+
+
 
 	
 //}	
