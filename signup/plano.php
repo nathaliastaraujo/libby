@@ -10,14 +10,23 @@
 
 include('../login/config.php');
 
-if (isset($_POST['options'])) {
-	var_dump($_POST);
+$choice = @$_POST['options'];
+
+if($choice == '1'){
 	$_SESSION['contaPlano'] = 1;
-} else {
-    var_dump("não escolheu nenhuma opção");
+	header("Location:http://localhost/libby/signup/pagamento.html");
+}else if($choice == '2'){
+	$_SESSION['contaPlano'] = 2;
+	
+	header("Location:http://localhost/libby/signup/pagamento.html");
+}else if($choice == '3'){
+	$_SESSION['contaPlano'] = 3;
+	header("Location:http://localhost/libby/signup/pagamento.html");
 }
-			
-	header("Location:http://localhost/libby/signup/infos.html");
+
+$pdo_insere = $conexao_pdo->prepare('UPDATE CONTA SET contaPlano = ? 
+WHERE contaCod = ?');
+$pdo_insere->execute(  array($_SESSION['contaPlano'],$_SESSION['contaCod'] ));
 
 ?> 
 </body>
